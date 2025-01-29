@@ -1,12 +1,20 @@
+//const express = require('express');
+//const router = express.Router();
 const express = require('express');
 const router = express.Router();
+const User = require('../Models/User');
 
-router.get('/', (req, res) => {
-    object = {
-        a: 'Alexboy',
-        no: 24
+// Register a new user
+router.post('/', async (req, res) => {
+    try {
+        const user = new User(req.body);
+        await user.save();
+        res.status(201).json({ success: true, message: "Notes Page", user });
+    } catch (error) {
+        res.status(400).json({ success: false, error: error.message });
     }
-    res.json(object);
 });
 
 module.exports = router;
+
+

@@ -7,13 +7,12 @@ router.post('/', async (req, res) => {
     try {
         const user = new User(req.body);
         await user.save();
-        res.status(201).json({ success: true, message: "Authentication Page", user });
+        res.status(201).json({ success: true, message: "Main Page", user });
     } catch (error) {
         res.status(400).json({ success: false, error: error.message });
     }
 });
 
 module.exports = router;
-
 
 

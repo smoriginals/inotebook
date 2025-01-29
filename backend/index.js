@@ -1,34 +1,21 @@
-//const connect = require('./db');
-//const express = require('express');
-
-//connect();
-//const app = express();
-//const port = 3001;
-//app.get('/api', (req, res) => {
-//    res.send('Hello World');
-//});
-//app.listen(port, () => {
-//    console.log(`Server is running on port ${port}`);
-//});
-
+const mongoose = require('mongoose');
 const connect = require('./db'); // Import the database connection
 const express = require('express');
+const user = require('./Models/User');
+
 
 connect(); // Connect to MongoDB
 
 const app = express();
-const port = 3001;
+const port = 5000;
 
-// Define an API route
-//app.get('/api', (req, res) => {
-//    res.send('Hello World');
-//});
-
+//Middelware usese for send things in Request Body.
+app.use(express.json());
 
 //Available Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/notes', require('./routes/notes'));
-
+app.use('/', require('./routes/main'));
 
 // Start the server
 app.listen(port, () => {
