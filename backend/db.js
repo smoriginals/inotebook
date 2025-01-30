@@ -1,7 +1,6 @@
 //Step 1 creating a connection to the MongoDB database so that we can interact with it using Mongoose.
 //this use for saving data in database of mongodb.
 
-
 const mongoose = require('mongoose');
 const mongoURI = 'mongodb+srv://surajmauryahomework:yWX3GdgeiQLICDGO@inotebook.vuy8p.mongodb.net/';
 

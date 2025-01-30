@@ -7,20 +7,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Routes\\notes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\Routes\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Routes\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\Routes\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Routes\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\db.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\db.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\Routes\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Routes\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\Models\\Notes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -29,6 +21,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\Models\\User.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Models\\User.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\db.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\db.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,26 +54,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "main.js",
               "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\Routes\\main.js",
               "RelativeDocumentMoniker": "backend\\Routes\\main.js",
               "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\Routes\\main.js",
               "RelativeToolTip": "backend\\Routes\\main.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-01-29T17:13:43.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "auth.js",
               "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\Routes\\auth.js",
               "RelativeDocumentMoniker": "backend\\Routes\\auth.js",
               "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\Routes\\auth.js",
               "RelativeToolTip": "backend\\Routes\\auth.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-01-27T19:20:17.782Z",
               "EditorCaption": ""
@@ -86,61 +86,61 @@
               "RelativeDocumentMoniker": "backend\\Routes\\notes.js",
               "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\Routes\\notes.js",
               "RelativeToolTip": "backend\\Routes\\notes.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-01-27T19:20:05.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User.js",
-              "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\Models\\User.js",
-              "RelativeDocumentMoniker": "backend\\Models\\User.js",
-              "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\Models\\User.js",
-              "RelativeToolTip": "backend\\Models\\User.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-27T19:19:50.396Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Notes.js",
               "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\Models\\Notes.js",
               "RelativeDocumentMoniker": "backend\\Models\\Notes.js",
               "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\Models\\Notes.js",
               "RelativeToolTip": "backend\\Models\\Notes.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-01-27T19:19:39.005Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "db.js",
               "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\db.js",
               "RelativeDocumentMoniker": "backend\\db.js",
               "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\db.js",
               "RelativeToolTip": "backend\\db.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-01-27T14:49:18.805Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "index.js",
               "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\index.js",
               "RelativeDocumentMoniker": "backend\\index.js",
               "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\index.js",
               "RelativeToolTip": "backend\\index.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-01-27T14:48:53.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.js",
+              "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\Models\\User.js",
+              "RelativeDocumentMoniker": "backend\\Models\\User.js",
+              "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\Models\\User.js",
+              "RelativeToolTip": "backend\\Models\\User.js",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-27T19:19:50.396Z",
               "EditorCaption": ""
             }
           ]
