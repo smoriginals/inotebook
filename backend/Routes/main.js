@@ -6,6 +6,9 @@ const router = express.Router();
 const jwt = require('jsonwebtoken');
 
 
+
+const JWT_KEY = 'alex$360';
+
 // Register a new user
 router.post('/', [
     //Express Validator for the validation.
@@ -32,6 +35,13 @@ router.post('/', [
             phone: req.body.phone
 
         });
+        const data = {
+            user: {
+                id:user.id
+            }
+        }
+        const jwtData = jwt.sign(data, JWT_KEY);
+        res.json(jwtData);
         //const passkey = new User(password);
         await user.save();
         res.status(201).json({ success: true, message: "User registered successfully", user });
