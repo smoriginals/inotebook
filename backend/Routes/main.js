@@ -1,9 +1,10 @@
-//Step 7: create a file that use for send request to the api end point and save the data in the database.
-
-const express = require('express');
-const router = express.Router();
-const User = require('../Models/User');
 const { body, validationResult } = require('express-validator');
+const User = require('../Models/User');
+const express = require('express');
+const bcrypt = require('bcryptjs');
+const router = express.Router();
+const jwt = require('jsonwebtoken');
+
 
 // Register a new user
 router.post('/', [
@@ -19,7 +20,19 @@ router.post('/', [
         return res.status(400).json({ success: false, message: "Validation failed", errors: errors.array() });
     }
     try {
-        const user = new User(req.body);
+        const salt = await bcrypt.genSalt(10);
+        const passkey = await bcrypt.hash(req.body.password, salt);
+
+        //create an user...
+        const user = new User({
+
+            name: req.body.name,
+            email: req.body.email,
+            password: passkey, // Store the hashed password
+            phone: req.body.phone
+
+        });
+        //const passkey = new User(password);
         await user.save();
         res.status(201).json({ success: true, message: "User registered successfully", user });
     } catch (error) {

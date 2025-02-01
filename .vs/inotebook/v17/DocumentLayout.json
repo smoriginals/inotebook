@@ -62,8 +62,7 @@
               "RelativeToolTip": "backend\\Routes\\main.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-29T17:13:43.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T17:13:43.412Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "backend\\Routes\\auth.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-27T19:20:17.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T19:20:17.782Z"
             },
             {
               "$type": "Document",
@@ -86,7 +84,7 @@
               "RelativeDocumentMoniker": "backend\\Routes\\notes.js",
               "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\backend\\Routes\\notes.js",
               "RelativeToolTip": "backend\\Routes\\notes.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-01-27T19:20:05.751Z",
               "EditorCaption": ""
@@ -101,8 +99,7 @@
               "RelativeToolTip": "backend\\Models\\Notes.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-27T19:19:39.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T19:19:39.005Z"
             },
             {
               "$type": "Document",
@@ -114,8 +111,7 @@
               "RelativeToolTip": "backend\\db.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-27T14:49:18.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T14:49:18.805Z"
             },
             {
               "$type": "Document",
@@ -127,8 +123,7 @@
               "RelativeToolTip": "backend\\index.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-27T14:48:53.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T14:48:53.217Z"
             },
             {
               "$type": "Document",
@@ -140,8 +135,7 @@
               "RelativeToolTip": "backend\\Models\\User.js",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-27T19:19:50.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T19:19:50.396Z"
             }
           ]
         }
