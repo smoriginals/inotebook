@@ -1,15 +1,14 @@
-const express = require('express');
-const router = express.Router();
-const User = require('../Models/User');
-const { body, validationResult } = require('express-validator');
+const { body, validationResult } = require('express-validator');      // Express Validator.     
+const userValidation = require('../Routes/userValidator');            // User Validator.
+const { JWT_KEY } = require('../Routes/config');                      // JWT Key.
+const User = require('../Models/User');                               // User Model.
+const jwt = require('jsonwebtoken');                                  // JWT(from web).
+const express = require('express');                                   // Express.
+const bcrypt = require('bcryptjs');                                   // Bcrypt(NPM Package).
+const router = express.Router();                                      // Router.
 
 // Register a new user
-router.post('/', [
-    body('name', 'Enter a valid Name').isLength({ min: 3 }),
-    body('email', 'Enter a valid Email').isEmail(),
-    body('password', 'Enter a strong password').isLength({ min: 6 }),
-    body('phone', 'Enter a No').isNumeric().isLength({min:10,max:15})
-], async (req, res) => {
+router.post('/',userValidation, async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
         return res.status(400).json({ success: false, message: "Authentication Page", user });

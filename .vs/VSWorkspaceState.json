@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\backend",
-    "\\backend\\Models",
     "\\backend\\Routes"
   ],
-  "SelectedNode": "\\backend\\Routes\\main.js",
+  "SelectedNode": "\\backend\\Routes\\auth.js",
   "PreviewInSolutionExplorer": false
 }
