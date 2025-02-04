@@ -8,11 +8,11 @@ connect();
 const app = express();
 const port = 5000;
 
-//Middleware (User for send req to JSON body).
+//Middleware (use to send data into request body).
 app.use(express.json());
 
 
-//app.use('/api/auth', require('./routes/auth'));
+app.use('/api/auth', require('./routes/auth'));
 //app.use('/api/notes', require('./routes/notes'));
 //app.use('/api/login', require('./Routes/login'));
 app.use('/', require('./routes/main'));

@@ -7,7 +7,7 @@ const express = require('express');                                   // Express
 const bcrypt = require('bcryptjs');                                   // Bcrypt(NPM Package).
 const router = express.Router();                                      // Router.
 
-
+// userValidation - Validation a user in userValidator.js please check it.
 router.post('/',userValidation, async (req, res) => {
 
 
@@ -29,7 +29,7 @@ router.post('/',userValidation, async (req, res) => {
 
         });
         await user.save();
-        const data = { user: { id: user.id } };
+        const data = { user: { id: user.id } };  // ?? 
         const jwtData = jwt.sign(data, JWT_KEY, { expiresIn: '1h' });
         res.status(201).json({ success: true, message: "User registered successfully",jwtData, user });
     } catch (error) {
