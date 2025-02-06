@@ -1,5 +1,6 @@
 const { body, validationResult } = require('express-validator');      // Express Validator.     
 const userValidation = require('../Routes/userValidator');            // User Validator.
+const loginValidation = require('../Routes/loginValidator');
 const { JWT_KEY } = require('../Routes/config');                      // JWT Key.
 const User = require('../Models/User');                               // User Model.
 const jwt = require('jsonwebtoken');                                  // JWT(from web).
@@ -9,7 +10,6 @@ const router = express.Router();                                      // Router.
 
 // userValidation - Validation a user in userValidator.js please check it.
 router.post('/',userValidation, async (req, res) => {
-
 
     const errors = validationResult(req);
 

@@ -4,8 +4,7 @@ const mongoURI = 'mongodb+srv://surajmauryahomework:yWX3GdgeiQLICDGO@inotebook.v
 const connect = async () => {
     try {
         await mongoose.connect(mongoURI, {
-            useNewUrlParser: true, // Optional: Ensure compatibility with modern MongoDB servers
-            useUnifiedTopology: true, // Optional: Enables the new connection management engine
+            
         });
         console.log('Connected to MongoDB');
     } catch (error) {

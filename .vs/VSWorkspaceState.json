@@ -5,6 +5,6 @@
     "\\backend\\Models",
     "\\backend\\Routes"
   ],
-  "SelectedNode": "\\backend\\Models\\Notes.js",
+  "SelectedNode": "\\backend\\Routes\\auth.js",
   "PreviewInSolutionExplorer": false
 }
