@@ -8,7 +8,7 @@ const bcrypt = require('bcryptjs');                                   // Bcrypt(
 const router = express.Router();                                      // Router.
 
 // userValidation - Validation a user in userValidator.js please check it.
-router.post('/login', loginValidation, async (req, res) => {
+router.post('/', loginValidation, async (req, res) => {
 
     const errors = validationResult(req);
 
