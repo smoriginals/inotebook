@@ -3,8 +3,9 @@
     "",
     "\\backend",
     "\\backend\\Models",
-    "\\backend\\Routes"
+    "\\backend\\Routes",
+    "\\public",
+    "\\src"
   ],
-  "SelectedNode": "\\backend\\Routes\\auth.js",
   "PreviewInSolutionExplorer": false
 }
