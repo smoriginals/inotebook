@@ -29,7 +29,8 @@ router.post('/', loginValidation, async (req, res) => {
         }
         const data = { user: { id: user.id } };
         const jwtData = jwt.sign(data, JWT_KEY, { expiresIn: '1h' });
-        res.status(200).json({ success: true, message: "User registered successfully", jwtData, user });
+
+        res.status(200).json({ success: true, message: "User registered successfully", jwtData,/*user*/ });
     } catch (error) {
         res.status(500).json({ success: false, error: error.message });
         console.error(error.message);

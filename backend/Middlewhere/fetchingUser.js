@@ -1,13 +1,15 @@
 const jwt = require('jsonwebtoken');
-const JWT_KEY = process.env.JWT_KEY;
 const User = require('../Models/User');
+const JWT_KEY = process.env.JWT_KEY;
+const bcrypt = require('bcryptjs');
+
 
 const fetchingUser = (req, res, next) => {
 
-    const tokenData = { user: { id: user.id } }; // Include user ID
-    const token = req.query.token || req.body.token;
-    console.log("Token received:", token);
-    if (!token) {
+    const tokenData = req.header("Authorization"); // Include user ID
+    
+    console.log("Token received:", tokenData);
+    if (!tokenData) {
         return res.status(401).send({ error: "Authentication Error" });
     }
     try {
@@ -17,7 +19,7 @@ const fetchingUser = (req, res, next) => {
     }
     catch (err) {
         console.log(err.message);
-        res.status(401).send({ error: "Authentication Error" });
+        res.status(401).send({ error: "Authentication Field" });
     }
 }
 module.exports = fetchingUser;

@@ -1,19 +1,16 @@
-const User = require('../Models/User');
-const express = require('express');
-const router = express.Router();
-const fetchingUser = require('../Middlewhere/fetchingUser');
+const express = require("express")
+const router = express.Router()
+const User = require("../Models/User")
+const fetchingUser = require("../Middlewhere/fetchingUser")
 
-
-router.post('/', fetchingUser, async (req, res) => {
+router.post("/", fetchingUser, async (req, res) => {
     try {
-        const userID = req.user.id;
-        console.log("User ID:", userID);
-        const user = await User.findById(userID).select("-password");
-        res.send(user);
+        const user = await User.findById(req.user.id).select("-password")
+        res.status(200).json({ success: true, message: "User registered successfully", user });
     } catch (err) {
-        console.log(err.message);
-        res.status(401).send('Error Occurred');
+        console.error(err.message)
+        res.status(500).send("Server Error")
     }
-});
+})
 
-module.exports = router;
+module.exports = router
