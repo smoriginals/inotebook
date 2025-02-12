@@ -2,6 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\backend",
+    "\\backend\\Middlewhere",
     "\\backend\\Models",
     "\\backend\\Routes",
     "\\public",

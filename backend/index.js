@@ -12,11 +12,11 @@ const port = 5000;
 //Middleware (use to send data into request body).
 app.use(express.json());
 
-app.use('/', require('./routes/main'));
+//app.use('/', require('./routes/main'));
 app.use('/api/auth', require('./routes/auth'));
-app.use('/api/login', require('./routes/login'));
+//app.use('/api/login', require('./routes/login'));
 app.use('/api/notes', require('./routes/notes'));
-app.use('/api/getUser', require('./Routes/getUser'));
+//app.use('/api/getUser', require('./Routes/getUser'));
 
 // Start the server
 app.listen(port, () => {

@@ -7,19 +7,17 @@ const jwt = require('jsonwebtoken');                                  // JWT(fro
 const express = require('express');                                   // Express.
 const bcrypt = require('bcryptjs');                                   // Bcrypt(NPM Package).
 const router = express.Router();                                      // Router.
+const fetchingUser = require('../Middlewhere/fetchingUser');          // Fetching User.
 
-// userValidation - Validation a user in userValidator.js please check it.
+
 router.post('/', userValidation, async (req, res) => {
-
     const errors = validationResult(req);
-
     if (!errors.isEmpty()) {
         return res.status(400).json({ success: false, message: "Authentication Page", errors: errors.array() });
     }
     try {
         const salt = await bcrypt.genSalt(10);
         const passkey = await bcrypt.hash(req.body.password, salt);
-
         const user = new User({
             name: req.body.name,
             email: req.body.email,
@@ -27,11 +25,50 @@ router.post('/', userValidation, async (req, res) => {
             phone: req.body.phone
         });
         await user.save();
-        const data = { user: { id: user.id } };  // ?? 
+        const data = { user: { id: user.id } };
         const jwtData = jwt.sign(data, JWT_KEY, { expiresIn: '1h' });
-        res.status(201).json({ success: true, message: "Authentication Page",jwtData, user });
+        res.status(201).json({ success: true, message: "Authentication Page", jwtData, user });
     } catch (error) {
         res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+router.post('/login', loginValidation, async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ success: false, message: "Validation failed", errors: errors.array() });
+    }
+    const { email, password } = req.body;
+    try {
+        let user = await User.findOne({ email });
+        if (!user) {
+            return res.status(400).json({ success: false, message: "Invalid Credentials" });
+        }
+        const isMatch = await bcrypt.compare(password, user.password);
+        if (!isMatch) {
+            return res.status(400).json({ success: false, message: "Invalid Credentials" });
+        }
+        const data = { user: { id: user.id } };
+        const jwtData = jwt.sign(data, JWT_KEY, { expiresIn: '1h' });
+        res.status(200).json({ success: true, message: "User registered successfully", jwtData });
+    } catch (error) {
+        res.status(500).json({ success: false, error: error.message });
+        console.error(error.message);
+    }
+});
+
+router.post("/getUser", fetchingUser, async (req, res) => {
+    try {
+        const userId = req.user.id;
+        const user = await User.findById(userId).select('-password');
+        res.status(200).json({
+            success: true,
+            user,
+            message: "User fetched successfully"
+        });
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send("Server Error");
     }
 });
 

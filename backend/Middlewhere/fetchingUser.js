@@ -1,25 +1,22 @@
 const jwt = require('jsonwebtoken');
-const User = require('../Models/User');
-const JWT_KEY = process.env.JWT_KEY;
-const bcrypt = require('bcryptjs');
+const { JWT_KEY } = require('../Routes/config');
 
 
 const fetchingUser = (req, res, next) => {
-
-    const tokenData = req.header("Authorization"); // Include user ID
-    
-    console.log("Token received:", tokenData);
-    if (!tokenData) {
-        return res.status(401).send({ error: "Authentication Error" });
+    const token = req.header('Authorization');
+    if (!token || !token.startsWith('Bearer ')) {
+        return res.status(401).json({ error: "No token, authorization denied",token });
     }
+    const tokenS = token.split(' ')[1];
     try {
-        const data = jwt.verify(tokenData, JWT_KEY);
-        req.user = data.user;
+        const decoded = jwt.verify(tokenS, JWT_KEY);
+        req.user = decoded.user;
         next();
+
     }
     catch (err) {
-        console.log(err.message);
-        res.status(401).send({ error: "Authentication Field" });
+        res.status(401).json({ error: "Token is not valid" });
     }
 }
+
 module.exports = fetchingUser;
