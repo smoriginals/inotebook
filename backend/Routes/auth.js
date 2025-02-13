@@ -64,15 +64,15 @@ router.post('/login', loginValidation, async (req, res) => {
     }
 });
 
-router.post("/getUser", fetchingUser, async (req, res) => {
+router.post('/getUser', fetchingUser, async (req, res) => {
     try {
         const userId = req.user.id;
         const user = await User.findById(userId).select('-password');
-        //res.status(200).json({
-        //    success: true,
-        //    user,
-        //    message: "User fetched successfully"
-        //});
+        res.status(200).json({
+            success: true,
+            user,
+            message: "User fetched successfully"
+        });
     } catch (err) {
         console.error(err.message);
         res.status(500).send("Server Error");
