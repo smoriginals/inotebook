@@ -1,29 +1,45 @@
-//const express = require('express');
-//const router = express.Router();
 const express = require('express');
 const router = express.Router();
-const User = require('../Models/User');
+const express = require('express');
+const router = express.Router();
+const Notes = require('../Models/Notes');
 const { body, validationResult } = require('express-validator');
-// Register a new user
-router.post('/', [
-    body('name', 'Enter a valid Name').isLength({ min: 3 }),
-    body('email', 'Enter a valid Email').isEmail(),
-    body('password', 'Enter a strong password').isLength({ min: 6 }),
-    body('phone', 'Enter a No').isNumeric().isLength({min:10,max:15})
-], async (req, res) => {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-        return res.status(400).json({ success: false, message: "Notes Page", user });
-    }
+const validateNotes = require('../Routes/validatesNotes');
+const fetchUser = require('../Middleware/fetchUser');
+
+
+router.post('/fetchNotes',fetchUser, async (req, res) => {
     try {
-        const user = new User(req.body);
-        await user.save();
-        res.status(201).json({ success: true, message: "Notes Page", user });
-    } catch (error) {
-        res.status(500).json({ success: false, error: error.message });
+        const { title, description, tag } = req.body;
+        const note = new Notes({
+            title, description, tag, user: req.user.id
+        });
+        const saveNote = await note.save();
+        res.json(saveNote);
+
+    }
+    catch(error) {
+        console.error(error.message, "Error Occured");
     }
 });
+router.post('/addNotes', fetchUser,validateNotes,async (req, res) => {
+    try {
+        const { title, description, tag } = req.body;
+        const note = new Notes({
+            title, description, tag, user: req.user.id
+        });
+        const errors = validationResult(req);
+        if (!errors.isEmptu()) {
+            return res.status(400).json({ error: errors.array() })
+        }
+        const saveNote = await note.save();
+        res.json(saveNote);
 
+    }
+    catch (error) {
+        console.error(error.message, "Error Occured");
+    }
+});
 module.exports = router;
 
 
