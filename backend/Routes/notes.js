@@ -6,23 +6,23 @@ const { body, validationResult } = require('express-validator');
 const validateNotes = require('../Routes/validatesNotes');
 const fetchUser = require('../Middlewhere/fetchingUser');
 
-//router.post('/addNotes', fetchUser, validateNotes, async (req, res) => {
-//    try {
-//        const { title, description, tag } = req.body;
-//        const note = new Notes({
-//            title, description, tag, user: req.user.id
-//        });
-//        const errors = validationResult(req);
-//        if (!errors.isEmptu()) {
-//            return res.status(400).json({ error: errors.array() })
-//        }
-//        const saveNote = await note.save();
-//        res.json(saveNote);
-//    }
-//    catch (error) {
-//        console.error(error.message, "Error Occured");
-//    }
-//});
+router.post('/addNotes', fetchUser, validateNotes, async (req, res) => {
+    try {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ error: errors.array() })
+        }
+        const { title, description, tag } = req.body;
+        const note = new Notes({
+            title, description, tag, user: req.user.id
+        });
+        const saveNote = await note.save();
+        res.json(saveNote);
+    }
+    catch (error) {
+        console.error(error.message, "Error Occured");
+    }
+});
 router.post('/fetchNotes',fetchUser, async (req, res) => {
     try {
         //const { title, description, tag } = req.body;
@@ -34,6 +34,31 @@ router.post('/fetchNotes',fetchUser, async (req, res) => {
     }
 });
 
+router.put('/updateNotes/:id', fetchUser, async (req, res) => {
+    const { title, description, tag } = req.body;
+    const newNote = {};
+    if (title) {
+        newNote.title = title;
+    }
+    if (description) {
+        newNote.description = description;
+    }
+    if (tag) {
+        newNote.tag = tag;
+    }
+    let note = await Note.findById(req.parmas.id);
+    if (!note) {
+        return res.status(404).send("Not Found");
+    }
+    if (note.user.toString() !== req.user.id) {
+        return res.status(401).send("Not Allowed");
+    }
+    note = await Notes.findByIdAndUpdate(req.params.id, { $set: newNote }, { new: true });
+    res.json({ note });
+   
+})
 module.exports = router;
+
+
 
 
