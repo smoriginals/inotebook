@@ -1,4 +1,3 @@
-
 const express = require('express');
 const router = express.Router();
 const Notes = require('../Models/Notes');
@@ -46,7 +45,7 @@ router.put('/updateNotes/:id', fetchUser, async (req, res) => {
     if (tag) {
         newNote.tag = tag;
     }
-    let note = await Note.findById(req.parmas.id);
+    let note = await Note.findById(req.params.id);
     if (!note) {
         return res.status(404).send("Not Found");
     }
@@ -56,6 +55,21 @@ router.put('/updateNotes/:id', fetchUser, async (req, res) => {
     note = await Notes.findByIdAndUpdate(req.params.id, { $set: newNote }, { new: true });
     res.json({ note });
    
+})
+
+router.delete('/deleteNotes/:id', fetchUser, async (req, res) => {
+    const { title, description, tag } = req.body;
+
+    let note = await Notes.findById(req.params.id);
+    if (!note) {
+        return res.status(404).send("Not Found");
+    }
+    if (note.user.toString() !== req.user.id) {
+        return res.status(401).send("Not Allowed");
+    }
+    note = await Notes.findByIdAndDelete(req.params.id, { new: true });
+    res.json({note:note});
+
 })
 module.exports = router;
 
