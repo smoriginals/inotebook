@@ -1,12 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\backend",
-    "\\backend\\Models",
-    "\\backend\\Routes",
-    "\\public",
-    "\\src"
+    "\\src",
+    "\\src\\Components",
+    "\\src\\Context"
   ],
-  "SelectedNode": "\\backend\\Routes\\notes.js",
+  "SelectedNode": "\\src\\Context\\NoteState.js",
   "PreviewInSolutionExplorer": false
 }
