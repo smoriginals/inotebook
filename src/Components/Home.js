@@ -1,9 +1,12 @@
-import React,{ useState} from 'react';
+import React,{ useState,useContext} from 'react';
 import { Link } from 'react-router-dom';
+import NoteContext from '../Context/NoteContext';
+
 export default function Home() {
 
+    const context = useContext(NoteContext);
+    const { state,setState } = context;
 
-    const [active, setActive] = useState(false);
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -42,7 +45,11 @@ export default function Home() {
                     </div>
                 </div>
             </nav>
-            <h1>Main Page</h1>
+            {
+                state.map((note) => {
+                    return <div key={note._id}>{note.name}</div>;
+                })
+            }
         </>
     )
 }
