@@ -1,11 +1,7 @@
-import React,{ useState,useContext} from 'react';
 import { Link } from 'react-router-dom';
-import NoteContext from '../Context/NoteContext';
+import Notes from '../Components/Notes';
 
 export default function Home() {
-
-    const context = useContext(NoteContext);
-    const { state,setState } = context;
 
     return (
         <>
@@ -39,17 +35,13 @@ export default function Home() {
                             </li>
                         </ul>
                         <form className="d-flex" role="search">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                                <button className="btn btn-outline-success" type="submit">Search</button>
+                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button className="btn btn-outline-success" type="submit">Search</button>
                         </form>
                     </div>
                 </div>
             </nav>
-            {
-                state.map((note) => {
-                    return <div key={note._id}>{note.name}</div>;
-                })
-            }
+            <Notes/>
         </>
     )
 }
