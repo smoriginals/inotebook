@@ -27,9 +27,15 @@
 .App-link {
   color: #61dafb;
 }
+.fa-trash{
+    margin-left:5%;
+}
+i{
+    cursor:pointer;
+}
 
 @keyframes App-logo-spin {
-  from {
+    from {
     transform: rotate(0deg);
   }
   to {

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../App.css';
 export default function NoteItems(props) {
 
     const {getNotes } = props;
@@ -10,7 +10,8 @@ export default function NoteItems(props) {
                     <div className="card-body">
                     <h5 className="card-title">{getNotes.title}</h5>
                     <p className="card-text">  {getNotes.description}</p>
-                    <a href="/" className="btn btn-primary">Edit</a>
+                    <i className="fa-solid fa-user-pen"></i>
+                    <i className="fa-solid fa-trash"></i>
                     </div>
             </div>
         </>

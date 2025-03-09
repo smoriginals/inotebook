@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
     "\\src",
-    "\\src\\Components",
-    "\\src\\Context"
+    "\\src\\Components"
   ],
-  "SelectedNode": "\\src\\Components\\NoteItems.js",
+  "SelectedNode": "\\src\\Components\\Navbar.js",
   "PreviewInSolutionExplorer": false
 }
