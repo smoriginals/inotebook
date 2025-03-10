@@ -11,9 +11,10 @@ export default function Notes() {
     return (
         <>
             
-            <div className="row m-3 ">
+            <div className="row d-flex flex-wrap justify-content-center my-4">
+                
                 {state.map((note) => {
-                    return <NoteItems getNotes={note} />
+                    return <NoteItems key={note._id} getNotes={note} />
                 })}
             </div>
         </>
