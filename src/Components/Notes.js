@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import NoteContext from '../Context/NoteContext';
 import NoteItems from '../Components/NoteItems';
-
+import AddingNote from '../Components/AddingNote';
 
 export default function Notes() {
 
@@ -10,12 +10,13 @@ export default function Notes() {
 
     return (
         <>
-            
-            <div className="row d-flex flex-wrap justify-content-center my-4">
-                
-                {state.map((note) => {
-                    return <NoteItems key={note._id} getNotes={note} />
-                })}
+            <AddingNote />
+            <div className="row d-flex flex-wrap justify-content-center">
+                {
+                    state.map((note) => {
+                        return <NoteItems getNotes={note} />
+                    })
+                }
             </div>
         </>
     )

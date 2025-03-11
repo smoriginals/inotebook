@@ -3,6 +3,7 @@ const user = require('./Models/User');
 const express = require('express');
 const connect = require('./db');
 require("dotenv").config();
+const cors = require('cors');
 
 connect();
 
@@ -11,6 +12,7 @@ const port = 5000;
 
 //Middleware (use to send data into request body).
 app.use(express.json());
+app.use(cors());
 
 app.use('/api/notes', require('./routes/notes'));
 app.use('/api/auth', require('./routes/auth'));
