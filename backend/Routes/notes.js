@@ -22,7 +22,7 @@ router.post('/addNotes', fetchUser, validateNotes, async (req, res) => {
         console.error(error.message, "Error Occured");
     }
 });
-router.post('/fetchNotes',fetchUser, async (req, res) => {
+router.get('/fetchNotes',fetchUser, async (req, res) => {
     try {
         //const { title, description, tag } = req.body;
         const notes = await Notes.find({ user: req.user.id });

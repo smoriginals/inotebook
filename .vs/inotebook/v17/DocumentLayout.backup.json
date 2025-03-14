@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\Notes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Notes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\NoteItems.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\NoteItems.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\AddingNote.js||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\AddingNote.js||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Context\\Contexts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Context\\Contexts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Context\\NoteState.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Context\\NoteState.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Context\\NoteContext.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Context\\NoteContext.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\NoteItems.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\NoteItems.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\Navbar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Navbar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\Home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\About.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\About.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\AddingNote.js||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\AddingNote.js||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +38,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.js",
+              "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\App.js",
+              "RelativeDocumentMoniker": "src\\App.js",
+              "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\App.js",
+              "RelativeToolTip": "src\\App.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-13T16:06:02.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Contexts.js",
+              "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Context\\Contexts.js",
+              "RelativeDocumentMoniker": "src\\Context\\Contexts.js",
+              "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Context\\Contexts.js",
+              "RelativeToolTip": "src\\Context\\Contexts.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-13T14:47:09.822Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
@@ -46,13 +76,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "NoteContext.js",
+              "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Context\\NoteContext.js",
+              "RelativeDocumentMoniker": "src\\Context\\NoteContext.js",
+              "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Context\\NoteContext.js",
+              "RelativeToolTip": "src\\Context\\NoteContext.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-13T14:38:40.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Navbar.js",
+              "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\Navbar.js",
+              "RelativeDocumentMoniker": "src\\Components\\Navbar.js",
+              "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\Navbar.js",
+              "RelativeToolTip": "src\\Components\\Navbar.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-12T17:17:17.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "About.js",
+              "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\About.js",
+              "RelativeDocumentMoniker": "src\\Components\\About.js",
+              "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\About.js",
+              "RelativeToolTip": "src\\Components\\About.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-12T17:17:07.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AddingNote.js",
               "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\AddingNote.js",
               "RelativeDocumentMoniker": "src\\Components\\AddingNote.js",
               "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\AddingNote.js",
               "RelativeToolTip": "src\\Components\\AddingNote.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-03-10T17:09:39.192Z",
               "EditorCaption": ""
@@ -60,66 +129,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Notes.js",
-              "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\Notes.js",
-              "RelativeDocumentMoniker": "src\\Components\\Notes.js",
-              "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\Notes.js",
-              "RelativeToolTip": "src\\Components\\Notes.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-04T18:33:05.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NoteContext.js",
-              "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Context\\NoteContext.js",
-              "RelativeDocumentMoniker": "src\\Context\\NoteContext.js",
-              "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Context\\NoteContext.js",
-              "RelativeToolTip": "src\\Context\\NoteContext.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-04T17:29:35.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "NoteItems.js",
               "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\NoteItems.js",
               "RelativeDocumentMoniker": "src\\Components\\NoteItems.js",
               "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\NoteItems.js",
               "RelativeToolTip": "src\\Components\\NoteItems.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-03-03T18:17:13.846Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NoteState.js",
-              "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Context\\NoteState.js",
-              "RelativeDocumentMoniker": "src\\Context\\NoteState.js",
-              "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Context\\NoteState.js",
-              "RelativeToolTip": "src\\Context\\NoteState.js",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAIwB8AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-28T17:53:33.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Home.js",
-              "DocumentMoniker": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\Home.js",
-              "RelativeDocumentMoniker": "src\\Components\\Home.js",
-              "ToolTip": "C:\\Users\\suraj\\OneDrive\\Desktop\\inotebook\\src\\Components\\Home.js",
-              "RelativeToolTip": "src\\Components\\Home.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-28T17:00:58.79Z"
             }
           ]
         }

@@ -1,20 +1,25 @@
-import './App.css';
-import Home from '../src/Components/Home';
-import About from '../src/Components/About';
 import { Routes, Route } from 'react-router-dom';
-import NoteState from './Context/NoteState';
+import Navbar from './Components/Navbar';
+import About from './Components/About';
+import AddingNote from './Components/AddingNote';
+import NoteItems from './Components/NoteItems';
+import Contexts from '../src/Context/Contexts';
+import ContextProvider from '../src/Context/Contexts';
+import './App.css';
 
-function App() {
+export default function App() {
     return (
         <>
-            <NoteState>
-                <Home />
+            <ContextProvider>
+                <Navbar />
+                <AddingNote />
+                <Contexts />
                 <Routes>
-                    <Route excat path="/about" element={<About />} />
+                    <Route exact path="/about" element={<About />} />
                 </Routes>
-            </NoteState>
+                <NoteItems />
+            </ContextProvider>
         </>
     );
 }
 
-export default App;
