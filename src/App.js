@@ -14,6 +14,7 @@ export default function App() {
                 <Navbar />
                 <AddingNote />
                 <Contexts />
+                
                 <Routes>
                     <Route exact path="/about" element={<About />} />
                 </Routes>

@@ -3,7 +3,7 @@ import React from 'react';
 export default function Notes(props) {
     return (
         <>
-            <div className="card col-md-3 container">
+            <div className="card row my-1 mx-1">
                 <div className="card-body">
                     <h5 className="card-title">{props.title}</h5>
                     <h6 className="card-subtitle mb-2 text-body-secondary">{props.tag}</h6>
