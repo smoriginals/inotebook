@@ -13,7 +13,7 @@ const ContextProvider = (props) => {
 
     const ViewNote = async () => {
         try {
-            const fetchNotes = await fetch('http://localhost:5000/api/notes/fetchNotes', {
+            const fetchNotes = await fetch('http://localhost:3000/api/notes/fetchNotes', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ const ContextProvider = (props) => {
     const AddNewNote = async (note) => {
         try {
             const { title, description, tag } = note;
-            const response = await fetch('http://localhost:5000/api/notes/addNote', {
+            const response = await fetch('http://localhost:3000/api/notes/addNote', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
