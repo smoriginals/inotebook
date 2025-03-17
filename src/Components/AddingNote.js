@@ -6,32 +6,29 @@ export default function AddingNote() {
     const context = useContext(ctx);
     const { AddNewNote } = context;
 
-    const [inputValue, setInputValue] = useState({
-        title: "",
-        description: "",
-        tag: ""
+    const [notes, setNote] = useState({
+        title: '',
+        description: '',
+        tag: ''
     });
 
 
     const HandleChange = (event) => {
-        setInputValue({
-            ...inputValue,
+        setNote ({
+            ...notes,
             [event.target.name]: event.target.value
         })
     }
-    const HandleSubmit = (event) => {
+    const HandleSubmit = async (event) => {
         event.preventDefault();
-        AddNewNote({
-            title: inputValue.title,
-            description: inputValue.description,
-            tag: inputValue.tag
-        });
-        console.log("Form Submitted",inputValue);
+        await AddNewNote(notes.title, notes.description, notes.tag);
+        setNote({title:'',description:'',tag:''})
+        console.log("Form Submitted",notes);
     }
 
     return (
         <>
-            <form className="container my-4">
+            <div className="container my-4">
                 <div className="mb-3">
                     <label htmlFor="noteTitle" className="form-label"><b>Note Title</b></label>
                     <input type="text" className="form-control" name="title" aria-describedby="titleHelp" placeholder="Enter Note Title" onChange={ HandleChange} />
@@ -46,7 +43,7 @@ export default function AddingNote() {
                     <input type="text" className="form-control" name="tag"  placeholder="@example,general...etc"onChange={HandleChange}/>
                 </div>
                 <button type="submit" className="btn btn-primary" onClick={HandleSubmit}>Add Note</button>
-            </form>
+            </div>
         </>
     )
 }
