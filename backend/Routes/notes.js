@@ -5,21 +5,45 @@ const { body, validationResult } = require('express-validator');
 const validateNotes = require('../Routes/validatesNotes');
 const fetchUser = require('../Middlewhere/fetchingUser');
 
-router.post('/addNotes', fetchUser, validateNotes, async (req, res) => {
+//router.post('/addNotes', fetchUser, validateNotes, async (req, res) => {
+//    try {
+//        const errors = validationResult(req);
+//        if (!errors.isEmpty()) {
+//            return res.status(400).json({ error: errors.array() })
+//        }
+//        const { title, description, tag } = req.body;
+//        const note = new Notes({
+//            title, description, tag, user: req.user.id
+//        });
+//        const saveNote = await note.save();
+//        res.json(saveNote);
+//    }
+//    catch (error) {
+//        console.error(error.message, "Error Occured");
+//    }
+//});
+// Example backend route for adding a note
+router.post('/api/notes/addNote', fetchUser, validateNotes, async (req, res) => {
     try {
-        const errors = validationResult(req);
-        if (!errors.isEmpty()) {
-            return res.status(400).json({ error: errors.array() })
-        }
-        const { title, description, tag } = req.body;
-        const note = new Notes({
-            title, description, tag, user: req.user.id
+        console.log('Received request to add note:', req.body);
+
+        // Create a new note
+        const newNote = new Note({
+            user: req.user.id, // From JWT token
+            title: req.body.title,
+            description: req.body.description,
+            tag: req.body.tag || 'General'
         });
-        const saveNote = await note.save();
-        res.json(saveNote);
-    }
-    catch (error) {
-        console.error(error.message, "Error Occured");
+
+        // Save to database
+        const savedNote = await newNote.save();
+        console.log('Note saved to database:', savedNote);
+
+        // Return the saved note
+        res.json(savedNote);
+    } catch (error) {
+        console.error('Error adding note:', error);
+        res.status(500).json({ error: 'Server error' });
     }
 });
 router.get('/fetchNotes',fetchUser, async (req, res) => {

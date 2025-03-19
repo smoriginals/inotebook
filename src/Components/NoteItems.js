@@ -1,9 +1,11 @@
 import React, { useContext } from 'react';
-import ctx from '../Context/NoteContext';
+import noteContext from '../Context/NoteContext';
 import Notes from '../Components/Notes';
+
+
 export default function NoteItems() {
 
-    const context = useContext(ctx);
+    const context = useContext(noteContext);
     const { notes } = context;
 
     return (
