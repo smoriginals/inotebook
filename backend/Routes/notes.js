@@ -5,23 +5,6 @@ const { body, validationResult } = require('express-validator');
 const validateNotes = require('../Routes/validatesNotes');
 const fetchUser = require('../Middlewhere/fetchingUser');
 
-//router.post('/addNotes', fetchUser, validateNotes, async (req, res) => {
-//    try {
-//        const errors = validationResult(req);
-//        if (!errors.isEmpty()) {
-//            return res.status(400).json({ error: errors.array() })
-//        }
-//        const { title, description, tag } = req.body;
-//        const note = new Notes({
-//            title, description, tag, user: req.user.id
-//        });
-//        const saveNote = await note.save();
-//        res.json(saveNote);
-//    }
-//    catch (error) {
-//        console.error(error.message, "Error Occured");
-//    }
-//});
 // Example backend route for adding a note
 router.post('/api/notes/addNote', fetchUser, validateNotes, async (req, res) => {
     try {
