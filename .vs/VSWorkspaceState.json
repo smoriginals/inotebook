@@ -3,7 +3,9 @@
     "",
     "\\backend",
     "\\backend\\Routes",
-    "\\src\\Components"
+    "\\src",
+    "\\src\\Components",
+    "\\src\\Context"
   ],
   "SelectedNode": "\\backend\\Routes\\notes.js",
   "PreviewInSolutionExplorer": false

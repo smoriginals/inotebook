@@ -36,7 +36,7 @@ export default function AddingNote() {
     const HandleSubmit = async (event) => {
         event.preventDefault();
         if (validate()) {
-            AddNewNote(note.title, note.description, note.tag);
+            AddNewNote(note);
             setNote({
                 title: '',
                 description: '',

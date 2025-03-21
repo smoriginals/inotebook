@@ -12,8 +12,8 @@ export default function NoteItems() {
         <>
             {
                 notes.map((note) => {
-                    return <div className="container col-md-3">
-                        <Notes key={note._id} title={note.title} description={note.description} tag={note.tag} />
+                    return <div className="container col-md-3" key={note._id}>
+                        <Notes key={note._id} title={note.title} description={note.description} tag={note.tag} note={note} />
                     </div>
                 })
             }
