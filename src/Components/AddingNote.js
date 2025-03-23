@@ -36,7 +36,7 @@ export default function AddingNote() {
     const HandleSubmit = async (event) => {
         event.preventDefault();
         if (validate()) {
-            AddNewNote(note);
+            AddNewNote(note.title,note.description,note.tag);
             setNote({
                 title: '',
                 description: '',
@@ -51,7 +51,7 @@ export default function AddingNote() {
                 <div className="mb-3">
                     <label htmlFor="noteTitle" className="form-label"><b>Note Title</b></label>
                     <input type="text" className="form-control" name="title" aria-describedby="titleHelp" placeholder="Enter Note Title" onChange={HandleChange} value={note.title} />
-                    <div name="titleHelp" className="form-text">Enter Your Note Title</div>
+                    
                     {errors.title && <div className="text-danger">{errors.title}</div>}
                 </div>
                 <div className="mb-3">

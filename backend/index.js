@@ -11,9 +11,7 @@ const port = process.env.PORT || 5000;
 app.use(express.json());        // Middleware to parse JSON
 app.use(cors());
 
-app.use('/api/notes', require('./routes/notes'));       // Routes
-app.use('/api/auth', require('./routes/auth'));         // Routes
-
+app.use('/api/auth', require('./routes/auth'));
 // Start the server
 app.listen(port, () => {
     console.log(`${port} PORT Online`);

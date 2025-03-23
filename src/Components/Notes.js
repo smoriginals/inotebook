@@ -8,7 +8,6 @@ export default function Notes(props) {
 
     const deleting = (e) => {
         e.preventDefault();
-        DeleteNote(note._id);
     }
     const editNote = (e) => {
         e.preventDefault();

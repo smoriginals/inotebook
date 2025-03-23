@@ -6,7 +6,7 @@ const validateNotes = require('../Routes/validatesNotes');
 const fetchUser = require('../Middlewhere/fetchingUser');
 
 // Example backend route for adding a note
-router.post('/api/notes/addNote', fetchUser, validateNotes, async (req, res) => {
+router.post('/addnotes', fetchUser, validateNotes, async (req, res) => {
     try {
         console.log('Received request to add note:', req.body);
 
@@ -29,7 +29,7 @@ router.post('/api/notes/addNote', fetchUser, validateNotes, async (req, res) => 
         res.status(500).json({ error: 'Server error' });
     }
 });
-router.get('/fetchNotes',fetchUser, async (req, res) => {
+router.get('/fetching',fetchUser, async (req, res) => {
     try {
         //const { title, description, tag } = req.body;
         const notes = await Notes.find({ user: req.user.id });
@@ -40,7 +40,7 @@ router.get('/fetchNotes',fetchUser, async (req, res) => {
     }
 });
 
-router.put('/updateNotes/:id', fetchUser, async (req, res) => {
+router.put('/update/:id', fetchUser, async (req, res) => {
     const { title, description, tag } = req.body;
     const newNote = {};
     if (title) {
@@ -64,7 +64,7 @@ router.put('/updateNotes/:id', fetchUser, async (req, res) => {
    
 })
 
-router.delete('/deleteNotes/:id', fetchUser, async (req, res) => {
+router.delete('/delete/:id', fetchUser, async (req, res) => {
     const { title, description, tag } = req.body;
 
     let note = await Notes.findById(req.params.id);
